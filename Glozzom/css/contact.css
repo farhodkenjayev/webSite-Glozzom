@@ -1,0 +1,113 @@
+.navbar{
+    background: #343a40!important;
+    min-height: 60px;
+
+}
+
+.navbar ul{
+    margin-left: auto;
+}
+
+.navbar ul a{
+    margin-right: 25px !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar ul a::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(165, 143, 127);
+    margin: auto;
+    
+    transition: 1s;
+}
+#ser::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgb(165, 143, 127);
+    margin: auto;
+}
+
+.navbar ul a:hover::after{
+    width: 100%;
+}
+
+
+#bgHeader{
+    background: url('https://www.teahub.io/photos/full/40-409013_office-desktop-wallpaper-hd.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    background-attachment: fixed    ;
+}
+
+#bgHeader h1{
+    font-size: 2.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.hr::before{
+    content: "\2014 \00A0 ";
+}
+
+
+
+form .name{
+    width: 82%;
+    margin: auto;
+    display: flex;
+   justify-content: space-around;
+   
+}
+
+form .name input{
+    width: 100%;
+    padding: 10px 60px 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid springgreen !important;
+    border-radius: 5px;
+}
+form .contact{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}   
+form .contact input{
+    width: 100%;
+    padding: 10px 60px 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid springgreen !important;
+    border-radius: 5px;
+}
+textarea{
+    width: 82%;
+    padding-left: 15px;
+    border: 1px solid springgreen !important;
+    border-radius: 5px;
+    min-height: 40px !important;
+}
+
+form button{
+    width: 82%;
+
+}
+form button:hover{
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff !important;
+}
+
+@media screen and (max-width:700px){
+    form{
+        font-size: 10px;
+    }
+    
+}
